@@ -1,7 +1,6 @@
-
-
 header {
     background-color: rgb(243, 164, 73);
+    margin: absolute;
     padding: 15px;
     text-align: center;
     font-size: 60px;
@@ -16,21 +15,33 @@ header {
 /* This is the Background of the Page */
 body {
     background-color: rgb(243, 164, 73);
+
+        margin: auto;
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+        border: 3px solid #73AD21;
+        padding: 10px;
+        text-align: auto;
+        display: flow-root;
+        
   }
   
  /* This is the Titles of the Page */
   h1 {
+    margin: center;
     color: white;
-    text-align: center;
+    text-align: auto;
     background-color: rgb(250, 137, 93);
   }
   
  /* This is the Text of the Page */ 
   p {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     background-color: rgb(245, 245, 133);
   }
+  
  
  /* This is the Unordered List of the Page */
  
@@ -39,8 +50,15 @@ body {
     font-size: 18px;
     background-color: rgb(245, 245, 133);
   }
+
+  li {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    background-color: rgb(245, 245, 133);
+  }
   
 footer{
+    margin: auto;
     color: rgb(170, 4, 4);
     text-align: center;
     background-color: rgb(250, 137, 93);    
@@ -55,14 +73,12 @@ nav {
     overflow: hidden;
   }
   
-  li {
-    float: left;
-  }
   
   li a {
     display: block;
     padding: 5px;
-    background-color: #dddddd;
+    background-color: rgb(244, 231, 116);
+    float: left;
   }
 
   ul {
@@ -70,3 +86,15 @@ nav {
     margin: 0;
     padding: 0;
   }
+
+/* This is the Columns Section  of the Page */  
+section#leftColumn {
+  clear: left;
+  float: left;
+  width: 33%; 
+}
+
+section#rightColumn {
+  float: right;
+  width: 67%;
+}
