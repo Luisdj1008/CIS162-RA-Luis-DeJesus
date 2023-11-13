@@ -3,7 +3,7 @@ header {
     margin: absolute;
     padding: 15px;
     text-align: center;
-    font-size: 60px;
+    font-size: 48px;
     font-style: oblique;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: aliceblue;
@@ -14,32 +14,41 @@ header {
 
 /* This is the Background of the Page */
 body {
-    background-color: rgb(243, 164, 73);
 
-        margin: auto;
+    background-image: url('pexels-johannes-plenio-1423600.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: absolute;
         margin-left: auto;
         margin-right: auto;
-        width: 95%;
-        border: 3px solid #73AD21;
-        padding: 10px;
-        text-align: auto;
         display: flow-root;
+        
+        
         
   }
   
  /* This is the Titles of the Page */
   h1 {
+    font-size: 20px;
     margin: center;
     color: white;
     text-align: auto;
     background-color: rgb(250, 137, 93);
   }
-  
+  h2 {
+    font-size: 16px;
+    margin: center;
+    color: white;
+    text-align: auto;
+    background-color: rgb(250, 137, 93);
+  }
  /* This is the Text of the Page */ 
   p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     background-color: rgb(245, 245, 133);
+    
   }
   
  
@@ -49,16 +58,18 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     background-color: rgb(245, 245, 133);
+    list-style-type: none;
+    
   }
 
-  li {
+  li b{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     background-color: rgb(245, 245, 133);
+    list-style-type: none;
   }
   
 footer{
-    margin: auto;
     color: rgb(170, 4, 4);
     text-align: center;
     background-color: rgb(250, 137, 93);    
@@ -67,34 +78,47 @@ footer{
 
 /* This is the Navigation Bar of the Page */
 nav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
-  
-  
-  li a {
-    display: block;
-    padding: 5px;
-    background-color: rgb(244, 231, 116);
-    float: left;
-  }
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;  
+}
+.active {
+  background-color: #04AA6D;
+}
+li {
+  float: left;
+}
 
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  
+}
+
+li a:hover {
+  background-color: #111;
+}
 
 /* This is the Columns Section  of the Page */  
 section#leftColumn {
   clear: left;
   float: left;
   width: 33%; 
+  
+  
 }
 
 section#rightColumn {
   float: right;
   width: 67%;
+}
+
+img {
+  margin: absolute;
+  float: left;
 }
